@@ -1,5 +1,6 @@
 <?php
 require('inc/functions.php');
+include('inc/header.php');
 ?>
 <!DOCTYPE html>
 <html lang="fr">

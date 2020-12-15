@@ -42,26 +42,24 @@
         <div class="logo">
           <img src="asset/img/logo.png" class="imglogo">
         </div>
-        
-        <div class="bouton-header">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-          Créer un compte
-          </button>
 
+        <div class="bouton-header">
           <a class="btn btn-primary" href="aboutus.php">Qui sommes-nous ?</a>
         </div>
       <!-- Button trigger modal -->
 
-<<<<<<< HEAD
-        
-=======
+
+
+
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registerModal">
           Créer un compte
         </button>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
           Connexion
         </button>
->>>>>>> df528112426868080ee57d764831e7e733068f2e
+        <button type="button" class="btn btn-primary">
+          Deconnexion
+        </button>
 
       <!-- Modal -->
       <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

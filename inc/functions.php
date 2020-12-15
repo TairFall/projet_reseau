@@ -315,7 +315,7 @@ function showJson($data)
   }
 }
 
-function hexToIpv4(ip)
+/*function hexToIpv4(ip)
 {
   var count= ;
   var shrToConvert = "";
@@ -356,4 +356,4 @@ function convertBlock(block){
   var dizaine = block[0]
   var unite= = bloock [1]
   dizaine * 16;
-}
+}*/
