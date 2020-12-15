@@ -3,13 +3,25 @@ body {
     color: #ffffff;
     font-family: 'Lato';
 }
-.container {
-    max-width: 1900px;
+header {
+    background-color: #112F41;
+    color: #ffffff;
+    font-family: 'Lato';
 }
+
+.container {
+    max-width: 2000px;
+    background-color: #112F41;
+}
+
 .logo {
-    width: 20%;
+    width: 150px;
     left: 2%;
 }
+.imglogo {
+    width: 100%;
+}
+
 
 .btn {
     background-color: #0052a4;

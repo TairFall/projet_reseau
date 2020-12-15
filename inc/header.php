@@ -33,23 +33,26 @@
 </head>
 
 <body>
-
+<header class="masthead text-white text-center">
   <!-- Navigation -->
   <nav class="navbar navbar-light bg-light static-top">
     <div class="container">
 
 
-        <div class="">
-          <img src="asset/img/logo.png" class="logo">
+        <div class="logo">
+          <img src="asset/img/logo.png" class="imglogo">
         </div>
+        
+        <div class="bouton-header">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          Créer un compte
+          </button>
 
-        <a class="btn btn-primary" href="aboutus.php">Qui sommes-nous ?</a>
-
+          <a class="btn btn-primary" href="aboutus.php">Qui sommes-nous ?</a>
+        </div>
       <!-- Button trigger modal -->
 
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-          Créer un compte
-        </button>
+        
 
       <!-- Modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -103,6 +106,6 @@
 
 
   <!-- Masthead -->
-  <header class="masthead text-white text-center">
+
 
   </header>
