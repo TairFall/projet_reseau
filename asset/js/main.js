@@ -1,5 +1,13 @@
 
 
+  $('.carousel-item').carousel({
+    pause: 'hover'
+    
+    )}
+
+
+
+
 $(window).load(function() {
     $('.flexslider').flexslider({
       animation: "slide",
@@ -73,4 +81,5 @@ $('#formabonne').on('submit', function(e) {
       }
     }
   });
+
 });
