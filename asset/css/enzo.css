@@ -1,0 +1,27 @@
+body {
+    background-color: #112F41;
+    color: #ffffff;
+    font-family: 'Lato';
+}
+.container {
+    max-width: 1900px;
+}
+.logo {
+    width: 20%;
+    left: 2%;
+}
+
+.btn {
+    background-color: #0052a4;
+    border: none;
+    transition: 0.4s all;
+}
+.btn:hover {
+    background-color: #07a9fc;
+}
+
+.carousel {
+    width: 50%;
+    border-color: #112F41;
+    border-radius: none;
+}

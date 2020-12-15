@@ -11,20 +11,25 @@
   <link rel="stylesheet" href="asset/css/style.css">
 
   <title>NetworkVIP</title>
-  
+
 
   <!-- Bootstrap core CSS -->
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
   <link href="template/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
-  
- 
+
+
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
 
   <!-- Perso css -->
   <link rel="stylesheet" href="asset/css/style.css">
+  <link rel="stylesheet" href="asset/css/basile.css">
+  <link rel="stylesheet" href="asset/css/benjamin.css">
+  <link rel="stylesheet" href="asset/css/enzo.css">
+  <link rel="stylesheet" href="asset/css/tair.css">
+
 </head>
 
 <body>
@@ -33,14 +38,18 @@
   <nav class="navbar navbar-light bg-light static-top">
     <div class="container">
 
-      <img src="asset/img/logo.png" class="logo">
-      <a class="btn btn-primary" href="#">Qui sommes-nous ?</a>
 
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
+        <div class="">
+          <img src="asset/img/logo.png" class="logo">
+        </div>
+
+        <a class="btn btn-primary" href="aboutus.php">Qui sommes-nous ?</a>
+
       <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-        Créer un compte
-      </button>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          Créer un compte
+        </button>
 
       <!-- Modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -92,19 +101,6 @@
     </div>
   </nav>
 
-  <div class="flexslider carousel">
-  <ul class="slides">
-    <li>
-      <img src="asset/flexslider/img/fibre.jpg" />
-    </li>
-    <li>
-      <img src="asset/flexslider/img/fibre2.jpg" />
-    </li>
-    <li>
-      <img src="asset/flexslider/img/reseau.jpg" />
-    </li>
-  </ul>
-</div>
 
   <!-- Masthead -->
   <header class="masthead text-white text-center">
