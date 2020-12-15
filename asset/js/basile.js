@@ -4,7 +4,8 @@ $('#myModal').on('shown.bs.modal', function () {
 })
 
 
-// Gestion formulaire
+// Gestion formulaire inscription
+
 $('#formabonne').on('submit', function(e) {
   e.preventDefault();
   let form = $('#formabonne')
@@ -52,6 +53,53 @@ $('#formabonne').on('submit', function(e) {
         }
         if(response.errors.password != null) {
           $('#error_password').html(response.errors.password)
+        }
+      }
+    }
+  });
+
+});
+
+
+
+
+// Gestion formulaire connexion
+
+$('#formlogin').on('submit', function(e) {
+  e.preventDefault();
+  let form = $('#formlogin')
+  $('.error').html('')
+    let email = $('#lemail').val()
+    let password = $('#lpassword').val()
+  $.ajax({
+    type: 'POST',
+    url: 'ajax/ajax-login.php',
+    url: form.attr('action'),
+    data: {
+       email: email,
+       password: password
+     },
+    data: form.serialize(),
+    dataType: 'json',
+    beforeSend: function() {
+      console.log('beforesend');
+      // out btn submit
+      //$('#btnsubmit').css('display','none')
+    },
+    success: function(response) {
+      console.log(response)
+
+      if(response.success == true) {
+        // modal out
+         //$('#bye').trigger('click'); // équivalent de  $('#lien1').click();
+          console.log('success')
+
+      } else {
+        if(response.errors.email != null) {
+          $('#lerror_email').html(response.errors.email)
+        }
+        if(response.errors.password != null) {
+          $('#lerror_password').html(response.errors.password)
         }
       }
     }
