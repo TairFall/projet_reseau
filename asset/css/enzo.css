@@ -1,22 +1,27 @@
 body {
-    background-color: #112F41;
+    background-color: #343A40;
     color: #ffffff;
     font-family: 'Lato';
 }
 header {
-    background-color: #112F41;
+    background-color: #343A40;
     color: #ffffff;
     font-family: 'Lato';
 }
 
+.navbar {
+    color: #343A40;
+}
 .container {
     max-width: 2000px;
-    background-color: #112F41;
+    background-color: #343A40;
+}
+p {
+    color: #fff;
 }
 
 .logo {
-    width: 150px;
-    left: 2%;
+    width: 10%;
 }
 .imglogo {
     width: 100%;
@@ -24,16 +29,18 @@ header {
 
 
 .btn {
-    background-color: #0052a4;
     border: none;
     transition: 0.4s all;
+    color: #fff;
 }
 .btn:hover {
     background-color: #07a9fc;
 }
+.card {
+    width: 900px;
+    color: black;
+}
+@media(min-width: 500px) and (max-width: 800px)
+{
 
-.carousel {
-    width: 50%;
-    border-color: #112F41;
-    border-radius: none;
 }
