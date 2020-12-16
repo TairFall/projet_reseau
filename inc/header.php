@@ -41,6 +41,9 @@
         <button type="button" class="btn " data-toggle="modal" data-target="#loginModal">
           Connexion
         </button>
+
+        <button id="logout" type="button" class="btn btn-primary">
+
         <p>Bonjour, </p>
         <button type="button" class="btn ">
           Deconnexion

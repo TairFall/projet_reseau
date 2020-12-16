@@ -1,6 +1,9 @@
 <?php
+require('../inc/function_mail.php');
 require('../inc/functions.php');
 require('../inc/pdo.php');
+
+
 
 $errors = array();
 $success = false;
@@ -12,17 +15,15 @@ $password1 = trim(strip_tags($_POST['password1']));
 $password2 = trim(strip_tags($_POST['password2']));
 
 // Validation du formulaire
-// nom
+
 $errors = validText($errors,$nom,'nom',4,30);
-// prenom
+
 $errors = validText($errors,$prenom,'prenom',4,30);
 
 $errors = validMail($errors,$email,'email');
 
 $errors = validPass($errors,$password1,'password',$password2,4,10);
-// email
-// age
-// etc... => select , checkbox
+
 
 if(count($errors) == 0) {
 
@@ -40,9 +41,10 @@ if(count($errors) == 0) {
   }
 
   if(count($errors) == 0){
-    $success = true;
+
+    $token = generateRandomString(120);
     $password = password_hash($password1, PASSWORD_DEFAULT);
-    $sql = "INSERT INTO utilisateur (nom,prenom,email,password,roles,created_at) VALUES (:nom,:prenom,:email,:password,'user',NOW())";
+    $sql = "INSERT INTO utilisateur (nom,prenom,email,password,roles,created_at,token,token_at) VALUES (:nom,:prenom,:email,:password,'user',NOW(),'$token',NOW())";
 
     $query = $pdo->prepare($sql);
     $query->bindValue(':nom',$nom,PDO::PARAM_STR);
@@ -50,12 +52,28 @@ if(count($errors) == 0) {
     $query->bindValue(':email',$email,PDO::PARAM_STR);
     $query->bindValue(':password',$password,PDO::PARAM_STR);
     $query->execute();
+
+    $link = 'lien';
+
+    $date = New DateTime("now");
+    $date->add(new DateInterval('PT3M'));
+
+    $mailexpediteur = 'vacbook@laposte.net';
+    $passwordmail = 'PoLhUUHG@56dqsdq9Saf';
+    $mailrecepteur = 'baz.martin42@gmail.com';
+    $object = 'Création de votre compte';
+    $message = 'Veuillez cliquer sur ce '.$link.' pour valider votre compte<br>Attention, le lien expire le '.$date->format('d-m-Y à H:i:s').'';
+
+
+    $msg = sendMailer($mailexpediteur,$passwordmail,$mailrecepteur,$object,$message);
+    $success = true;
+
   }
   // envoie email
-  // insert into
-  // etc..
+
 }
 $data = array(
+  //'msg' => $msg,
   'errors' => $errors,
   'success' => $success
 );

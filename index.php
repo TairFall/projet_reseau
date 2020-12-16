@@ -1,8 +1,10 @@
 <?php
+session_start();
 
-include('inc/header.php');
 require('inc/functions.php');
+include('inc/header.php');
 ?>
+
 <div class="container">
     <div class="row">
         <div class="col align-self-start">
@@ -34,6 +36,7 @@ require('inc/functions.php');
         </div>
     </div>
 </div>
+
 
 
 <?php
