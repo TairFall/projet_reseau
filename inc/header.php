@@ -9,58 +9,57 @@
   <meta name="author" content="">
   <link rel="stylesheet" href="asset/flexslider/flexslider.css">
   <link rel="stylesheet" href="asset/css/style.css">
-
   <title>NetworkVIP</title>
-
-
   <!-- Bootstrap core CSS -->
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
   <link href="template/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
   <!-- Custom fonts for this template -->
-
-
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-
   <!-- Perso css -->
   <link rel="stylesheet" href="asset/css/style.css">
   <link rel="stylesheet" href="asset/css/basile.css">
   <link rel="stylesheet" href="asset/css/benjamin.css">
   <link rel="stylesheet" href="asset/css/enzo.css">
   <link rel="stylesheet" href="asset/css/tair.css">
-
 </head>
-
 <body>
 <header class="masthead text-white text-center">
   <!-- Navigation -->
-  <nav class="navbar navbar-light bg-light static-top">
+  <nav class="navbar navbar-light static-top">
     <div class="container">
-
-
         <div class="logo">
-          <img src="asset/img/logo.png" class="imglogo">
+            <a href="index.php"><img src="asset/img/logo.png" class="imglogo" alt="logo"></a>
         </div>
-
-        <div class="bouton-header">
-          <a class="btn btn-primary" href="aboutus.php">Qui sommes-nous ?</a>
-        </div>
-      <!-- Button trigger modal -->
+       
 
 
-
-
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registerModal">
+        <nav class="navbar navbar-dark bg-dark">
+        <a class="btn" href="aboutus.php">Qui sommes-nous ?</a>
+        <button type="button" class="btn " data-toggle="modal" data-target="#registerModal">
           Créer un compte
         </button>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
+        <button type="button" class="btn " data-toggle="modal" data-target="#loginModal">
           Connexion
         </button>
-        <button type="button" class="btn btn-primary">
+        <p>Bonjour, </p>
+        <button type="button" class="btn ">
           Deconnexion
         </button>
-
+        
+        </nav>
+  </div>
+</nav>
+        
+          
+        
+      <!-- Button trigger modal -->
+      
+      <div class="bouton-header">
+        
+        
+        
+        
+    </div>
       <!-- Modal -->
       <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -98,7 +97,6 @@
                   <span class="error" id="error_password"></span>
                 </div>
                 <input type="submit" value="Inscription" name="submitted" class="btn btn-primary">
-
               </form>
             </div>
             <div class="modal-footer">
@@ -129,7 +127,6 @@
                   <span class="error" id="lpassword"></span>
                 </div>
                 <input type="submit" value="Inscription" name="lsubmitted" class="btn btn-primary">
-
               </form>
             </div>
             <div class="modal-footer">
@@ -138,12 +135,7 @@
           </div>
         </div>
       </div>
-
     </div>
   </nav>
-
-
   <!-- Masthead -->
-
-
   </header>
