@@ -33,7 +33,7 @@
 </head>
 
 <body>
-<header class="masthead text-white text-center">
+<!-- <header class="masthead text-white text-center"> -->
   <!-- Navigation -->
   <nav class="navbar navbar-light bg-light static-top">
     <div class="container">
