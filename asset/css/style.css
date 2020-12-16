@@ -68,7 +68,22 @@ table {
 
 /* Reset perso */
 
+.wrap1 {
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+.wrap2 {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
 
+.wrap3 {
+	width: 100%;
+	max-width: 1600px;
+	margin: 0 auto;
+}
 
 label {
   color: black;
