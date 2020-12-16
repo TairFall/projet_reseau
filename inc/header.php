@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="asset/css/tair.css">
 </head>
 <body>
-<header class="masthead text-white text-center">
+<!-- <header class="masthead text-white text-center"> -->
   <!-- Navigation -->
   <nav class="navbar navbar-light static-top">
     <div class="container">
