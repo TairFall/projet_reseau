@@ -1,9 +1,15 @@
 <?php
+session_start();
 
-include('inc/header.php');
 require('inc/functions.php');
+include('inc/header.php');
 ?>
 
+<?php
+if(isLoggedUser() || isLoggedAdmin()) {
+   print_r($_SESSION);
+}
+?>
 
 
 <?php

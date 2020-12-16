@@ -57,7 +57,7 @@
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
           Connexion
         </button>
-        <button type="button" class="btn btn-primary">
+        <button id="logout" type="button" class="btn btn-primary">
           Deconnexion
         </button>
 

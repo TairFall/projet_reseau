@@ -15,48 +15,52 @@ $('#formabonne').on('submit', function(e) {
     let email = $('#email').val()
     let password1 = $('#password1').val()
     let password2 = $('#password2').val()
-  $.ajax({
-    type: 'POST',
-    url: 'ajax/ajax-register.php',
-    url: form.attr('action'),
-    data: {
-       nom: nom,
-       prenom: prenom,
-       email: email,
-       password1: password1,
-       password2: password2
-     },
-    data: form.serialize(),
-    dataType: 'json',
-    beforeSend: function() {
-      console.log('beforesend');
-      // out btn submit
-      //$('#btnsubmit').css('display','none')
-    },
-    success: function(response) {
-      console.log(response)
 
-      if(response.success == true) {
-        // modal out
-         $('#bye').trigger('click'); // équivalent de  $('#lien1').click();
-          console.log('success')
+    $.ajax({
+      type: 'POST',
+      url: 'ajax/ajax-register.php',
+      url: form.attr('action'),
+      data: {
+         nom: nom,
+         prenom: prenom,
+         email: email,
+         password1: password1,
+         password2: password2
+       },
+      data: form.serialize(),
+      dataType: 'json',
+      beforeSend: function() {
+        console.log('beforesend');
+        // out btn submit
+        //$('#btnsubmit').css('display','none')
+      },
 
-      } else {
-        if(response.errors.nom != null) {
-          $('#error_nom').html(response.errors.nom)
-        }
-        if(response.errors.prenom != null) {
-          $('#error_prenom').html(response.errors.prenom)
-        }
-        if(response.errors.email != null) {
-          $('#error_email').html(response.errors.email)
-        }
-        if(response.errors.password != null) {
-          $('#error_password').html(response.errors.password)
+      success: function(response) {
+        console.log(response)
+
+        if(response.success == false) {
+          // modal out
+          if(response.errors.nom != null) {
+            $('#error_nom').html(response.errors.nom)
+          }
+          if(response.errors.prenom != null) {
+            $('#error_prenom').html(response.errors.prenom)
+          }
+          if(response.errors.email != null) {
+            $('#error_email').html(response.errors.email)
+          }
+          if(response.errors.password != null) {
+            $('#error_password').html(response.errors.password)
+          }
+
+
+        } else {
+          $('#bye').trigger('click'); // équivalent de  $('#lien1').click();
+           console.log('success')
         }
       }
-    }
-  });
+    });
+
 
 });
 
@@ -83,25 +87,54 @@ $('#formlogin').on('submit', function(e) {
     dataType: 'json',
     beforeSend: function() {
       console.log('beforesend');
+
       // out btn submit
       //$('#btnsubmit').css('display','none')
     },
     success: function(response) {
       console.log(response)
-
-      if(response.success == true) {
-        // modal out
-         //$('#bye').trigger('click'); // équivalent de  $('#lien1').click();
-          console.log('success')
-
-      } else {
+      if(response.success == false) {
         if(response.errors.email != null) {
           $('#lerror_email').html(response.errors.email)
         }
         if(response.errors.password != null) {
           $('#lerror_password').html(response.errors.password)
         }
+        // modal out
+         //$('#bye').trigger('click'); // équivalent de  $('#lien1').click();
+
+
+      } else {
+        console.log('success')
+
       }
+    }
+  });
+
+});
+
+
+
+
+// Logout
+
+
+$('#logout').on('click', function(e) {
+  e.preventDefault();
+  $.ajax({
+    type: 'POST',
+    url: 'ajax/ajax-logout.php',
+    dataType: 'json',
+    beforeSend: function() {
+      console.log('beforesend');
+      // out btn submit
+      //$('#btnsubmit').css('display','none')
+    },
+    success: function(response) {
+      console.log(response);
+      console.log('bonjour');
+      //window.location.replace(http://);
+      window.location.reload();
     }
   });
 
