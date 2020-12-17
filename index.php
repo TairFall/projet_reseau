@@ -8,7 +8,7 @@ include('inc/header.php');
 <div class="container">
     <div class="row">
         <div class="col align-self-start">
-            <div class="card mb-1">
+            <div class="card mb-1 cardhome">
                 <img class="card-img-top" src="asset/flexslider/img/reseau.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Sécurisé :</h5>
@@ -17,7 +17,7 @@ include('inc/header.php');
             </div>
         </div>
         <div class="col align-self-end">
-            <div class="card mb-2">
+            <div class="card mb-2 cardhome">
                 <img class="card-img-top" src="asset/flexslider/img/fibre.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title"></h5>
@@ -26,7 +26,7 @@ include('inc/header.php');
             </div>
         </div>
         <div class="col align-self-start">
-            <div class="card mb-3">
+            <div class="card mb-3 cardhome">
                 <img class="card-img-top" src="asset/flexslider/img/fibre2.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Simple et rapide :</h5>

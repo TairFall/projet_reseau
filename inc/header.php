@@ -26,11 +26,11 @@
 <!-- <header class="masthead text-white text-center"> -->
   <!-- Navigation -->
   <nav class="navbar navbar-light static-top">
-    <div class="container">
+    <div class="container headcontain">
         <div class="logo">
             <a href="index.php"><img src="asset/img/logo.png" class="imglogo" alt="logo"></a>
         </div>
-       
+
 
 
         <nav class="navbar navbar-dark bg-dark">
@@ -38,30 +38,33 @@
         <button type="button" class="btn " data-toggle="modal" data-target="#registerModal">
           Créer un compte
         </button>
-        <button type="button" class="btn " data-toggle="modal" data-target="#loginModal">
-          Connexion
-        </button>
+        <?php if(!isLoggedUser()) { ?>
+          <button type="button" class="btn " data-toggle="modal" data-target="#loginModal">
+            Connexion
+          </button>
+        <?php } ?>
 
-        <button id="logout" type="button" class="btn btn-primary">
+        <?php if(isLoggedUser() || isLoggedAdmin()) { ?>
+        <p>Bonjour <?= $_SESSION['user']['pseudo']; ?> </p>
 
-        <p>Bonjour, </p>
-        <button type="button" class="btn ">
+
+        <button id="logout" type="button" class="btn ">
           Deconnexion
         </button>
-        
+        <?php } ?>
         </nav>
   </div>
 </nav>
-        
-          
-        
+
+
+
       <!-- Button trigger modal -->
-      
+
       <div class="bouton-header">
-        
-        
-        
-        
+
+
+
+
     </div>
       <!-- Modal -->
       <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -119,18 +122,19 @@
             </div>
             <div class="modal-body">
               <form id="formlogin" action="ajax/ajax-login.php" method="post">
-                <div class="form-group">
+                <div id="email_login" class="form-group">
                   <label for="nom">Email</label>
                   <input type="email" id="lemail" name="lemail">
                   <span class="error" id="lerror_email"></span>
                 </div>
-                <div class="form-group">
+                <div id="password_login_form" class="form-group">
                   <label for="lpassword">Mot de passe</label>
                   <input type="password" id="lpassword" name="lpassword">
                   <span class="error" id="lpassword"></span>
                 </div>
-                <input type="submit" value="Inscription" name="lsubmitted" class="btn btn-primary">
+                <input id="submit_login" type="submit" value="Connexion" name="lsubmitted" class="btn btn-primary">
               </form>
+              <a class="forgot_pass" href="index.php">Mot de passe oublié ?</a>
             </div>
             <div class="modal-footer">
               <button id="bye2" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

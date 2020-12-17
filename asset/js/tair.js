@@ -14,7 +14,7 @@ $(document).ready(function() {
   });
 });
 
-var ctx = document.getElementById('myChart').getContext('2d');
+/*var ctx = document.getElementById('myChart').getContext('2d');
 Chart.defaults.global.defaultFontColor = '#ffffff';
 var myChart = new Chart(ctx, {
   type: 'bar',
@@ -76,4 +76,4 @@ var myChart2 = new Chart(ctx, {
       }]
     }
   }
-});
+}); */

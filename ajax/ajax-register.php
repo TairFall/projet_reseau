@@ -44,7 +44,7 @@ if(count($errors) == 0) {
 
     $token = generateRandomString(120);
     $password = password_hash($password1, PASSWORD_DEFAULT);
-    $sql = "INSERT INTO utilisateur (nom,prenom,email,password,roles,created_at,token,token_at) VALUES (:nom,:prenom,:email,:password,'user',NOW(),'$token',NOW())";
+    $sql = "INSERT INTO utilisateur (nom,prenom,email,password,roles,created_at,token,token_at) VALUES (:nom,:prenom,:email,:password,'user_novalid',NOW(),'$token',NOW())";
 
     $query = $pdo->prepare($sql);
     $query->bindValue(':nom',$nom,PDO::PARAM_STR);
@@ -53,7 +53,7 @@ if(count($errors) == 0) {
     $query->bindValue(':password',$password,PDO::PARAM_STR);
     $query->execute();
 
-    $link = 'lien';
+    $link = $link = '<a href="http://localhost'.dirname($_SERVER['PHP_SELF'],2).'/validate_user.php?id='. $token.'">Lien</a>';
 
     $date = New DateTime("now");
     $date->add(new DateInterval('PT3M'));

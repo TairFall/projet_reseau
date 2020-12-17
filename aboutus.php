@@ -1,33 +1,9 @@
 <?php
+session_start();
 require('inc/functions.php');
 include('inc/header.php');
 ?>
-<!DOCTYPE html>
-<html lang="fr">
 
-<head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Qui sommes-nous?</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="template/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="template/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="template/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="template/css/landing-page.min.css" rel="stylesheet">
-
-  <!-- Perso css -->
-  <link rel="stylesheet" href="asset/css/tair.css">
-</head>
-
-<body>
   <!-- JUMBOTRON -->
   <div class="jumbotron jumbotron-fluid">
     <div class="head">
@@ -37,7 +13,7 @@ include('inc/header.php');
       <p class="lead">La connexion Internet de votre entreprise ou votre logement est de moins en moins fiable ?<br> Votre réseau rencontre des erreurs dont vous ignorez la cause ?<br> Avec NetworkVIP, vous disposez d’un outil de supervision du trafic réseau qui analyse votre consommation de données et met au jour les causes des problèmes qui perturbent votre réseau.</p>
     </div>
   </div>
-  <div class="container">
+  <div class="wrap1">
 
 
     <!-- DECOUVREZ-NOUS -->

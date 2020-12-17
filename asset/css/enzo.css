@@ -1,24 +1,19 @@
 body {
     background-color: #343A40;
-    color: #ffffff;
     font-family: 'Lato';
 }
 header {
     background-color: #343A40;
-    color: #ffffff;
-    font-family: 'Lato';
 }
 
-.navbar {
+/* .navbar {
     color: #343A40;
-}
-.container {
+} */
+.headcontain {
     max-width: 2000px;
     background-color: #343A40;
 }
-p {
-    color: #fff;
-}
+
 
 .logo {
     width: 10%;
@@ -36,7 +31,7 @@ p {
 .btn:hover {
     background-color: #07a9fc;
 }
-.card {
+.cardhome {
     width: 900px;
     color: black;
 }

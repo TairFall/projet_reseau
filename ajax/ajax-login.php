@@ -56,7 +56,10 @@ else {
   $errors['email'] = 'Veuillez renseigner les champs';
 }
 
-$userajax = $_SESSION['user'];
+if(!empty($_SESSION['user'])){
+  $userajax = $_SESSION['user'];
+}
+
 $data = array(
   'errors' => $errors,
   'success' => $success,

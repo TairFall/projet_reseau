@@ -105,7 +105,8 @@ $('#formlogin').on('submit', function(e) {
 
 
       } else {
-        console.log('success')
+        console.log('success');
+        window.location.reload();
 
       }
     }
@@ -139,3 +140,57 @@ $('#logout').on('click', function(e) {
   });
 
 });
+
+
+/// MOT DE PASSE OUBLIE
+
+
+/*
+$('.forgot_pass').on('click', function(e) {
+  e.preventDefault();
+  $('#password_login_form').remove();
+  $('#submit_login').addClass('submit_forgot');
+  $('#formlogin').addClass('form_login');
+  $('#submit_login').val('Envoyer');
+
+  $('#bye2').on('click',function(){
+    if (!$('#bye2').hasClass('byeforgot')){
+      $('<div id="password_login_form" class="form-group"><label for="lpassword">Mot de passe</label><input type="password" id="lpassword" name="lpassword"><span class="error" id="lpassword"></span><div>').insertAfter("#email_login");
+    }
+    $('#submit_login').removeClass('submit_forgot');
+    $('#formlogin').removeClass('form_login');
+    $('#submit_login').val('Connexion');
+    $('#bye2').addClass('byeforgot');
+
+
+  })
+
+  // AU SUBMIT
+  $('.formlogin').on('submit', function(e) {
+    e.preventDefault();
+    let form = $('#formlogin')
+    $('.error').html('')
+    $.ajax({
+      type: 'POST',
+      url: 'ajax/ajax-forgot.php',
+      url: form.attr('action'),
+      data: form.serialize(),
+      dataType: 'json',
+      beforeSend: function() {
+        console.log('beforesend');
+
+        // out btn submit
+        //$('#btnsubmit').css('display','none')
+      },
+      success: function(response) {
+        console.log(response)
+
+      }
+    });
+
+  });
+
+
+
+});
+*/
