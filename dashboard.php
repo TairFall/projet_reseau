@@ -3,18 +3,7 @@ session_start();
 require('inc/functions.php');
 include('inc/header.php');
 ?>
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <title>Espace Client</title>
-</head>
-<body>
+<div class="wrap1">
   <div class="page_title">
     <div class="jumbotron2">
       <h1 class="display-4">Votre Espace Client</h1>
@@ -36,8 +25,5 @@ include('inc/header.php');
     </div>
 
   </div>
-</body>
-</html>
-
-
+</div>
 <?php include('inc/footer.php');
