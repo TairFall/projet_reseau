@@ -1,5 +1,10 @@
 
 /* footer */
+/* section contact */
+#containerfooter a{
+	text-decoration: none;
+	color: white;
+}
 
 /* css social icons  */
 
@@ -16,30 +21,30 @@
 	border-radius: 50%;
 }
 
-#social-icons a.twitter {
-	background-position: -165px -378px;
-}
+	#social-icons a.twitter {
+		background-position: -165px -378px;
+	}
 
-#social-icons a.snapchat {
-	background-position: -309px -306px;
-}
+	#social-icons a.snapchat {
+		background-position: -309px -306px;
+	}
 
-#social-icons a.instagram {
-	background-position: -20px -306px;
-}
+	#social-icons a.instagram {
+		background-position: -20px -306px;
+	}
 
-#social-icons a:hover {
-	background-position: -237px -17px;
-}
+	#social-icons a:hover {
+		background-position: -237px -17px;
+	}
 
-#social-icons a.twitter:hover {
-	background-position: -165px -161px;
-}
+	#social-icons a.twitter:hover {
+		background-position: -165px -161px;
+	}
 
-#social-icons a.snapchat:hover {
-	background-position: -309px -89px;
-}
+	#social-icons a.snapchat:hover {
+		background-position: -309px -89px;
+	}
 
-#social-icons a.instagram:hover {
+	#social-icons a.instagram:hover {
 	background-position: -20px -89px;
 }

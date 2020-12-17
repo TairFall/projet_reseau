@@ -4,40 +4,13 @@ session_start();
 require('inc/functions.php');
 include('inc/header.php');
 ?>
-
-<div class="container">
-    <div class="row">
-        <div class="col align-self-start">
-            <div class="card mb-1 cardhome">
-                <img class="card-img-top" src="asset/flexslider/img/reseau.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Sécurisé :</h5>
-                    <p class="card-text">Aucunes données personelles n'est stockés</p>
-                </div>
-            </div>
-        </div>
-        <div class="col align-self-end">
-            <div class="card mb-2 cardhome">
-                <img class="card-img-top" src="asset/flexslider/img/fibre.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title"></h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col align-self-start">
-            <div class="card mb-3 cardhome">
-                <img class="card-img-top" src="asset/flexslider/img/fibre2.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Simple et rapide :</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-            </div>
-        </div>
+<div class="container-fluid">
+    <div id="titre" class="d-flex flex-column text-center">
+        <p class="text-uppercase text-primary">Bienvenue chez NetworkVIP</p>
+        <br>
+        <p class="text-primary">Le site N°1 pour mesurer les connexions entre utilisateurs</p>
     </div>
 </div>
-
-
-
+<div class="container-fluid d-flex flex-column"></div>
 <?php
 include('inc/footer.php');
