@@ -22,7 +22,10 @@ foreach ($trames as $trame) {
   $flags_code = $trame['flags']['code'];
   $ttl = $trame['ttl'];
   $protocol_name = $trame['protocol']['name'];
-  $protocol_flags_code = $trame['protocol']['flags']['code'];
+  $protocol_flags_code = "";
+  if (isset($trame['protocol']['flags'])){
+    $protocol_flags_code = $trame['protocol']['flags']['code'];
+  }
   $protocol_checksum_status = $trame['protocol']['checksum']['status'];
   $protocol_ports_from = $trame['protocol']['ports']['from'];
   $protocol_ports_dest = $trame['protocol']['ports']['dest'];
