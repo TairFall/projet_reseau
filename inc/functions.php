@@ -315,45 +315,16 @@ function showJson($data)
   }
 }
 
-/*function hexToIpv4(ip)
-{
-  var count= ;
-  var shrToConvert = "";
-  for(var i = 0; i<ip.length;i++){
-    strToConvert +=ip[i];
-    count++;
-    if (count ===2){
-      console.log(strToConvert)
-      convertBlock(strToCovnert);
-      count=0;
-    }
-
-  }
-}
-
-
-var hexaToBase16 =
-"0" : 0,
-"0" : 0,
-"0" : 0,
-"0" : 0,
-"0" : 0,
-"0" : 0,
-"0" : 0,
-"0" : 0,
-"0" : 0,
-"0" : 0,
-"0" : 0,
-"0" : 0,
-"0" : 0,
-"0" : 0,
-"0" : 0,
-"0" : 0,
-
-
-
-function convertBlock(block){
-  var dizaine = block[0]
-  var unite= = bloock [1]
-  dizaine * 16;
-}*/
+// function hexToIp($ip){
+// $ip = explode(" ", $ip);
+//   }
+//
+//
+// $iphexa = "c0a8014a";
+//
+// function convertToByte($hexa, $tableau){
+//   $totalDizaine = (int)$hexa[0] * (int)16;
+//   $totalDizaine = $tableau[$hexa[0]] * (int)16;
+//   $total = $totalDizaine + $tableau[$hexa[1]];
+//   return $total;
+// }

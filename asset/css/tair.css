@@ -9,7 +9,7 @@
 #logo_about {
   max-width: 10%;
 }
-.jumbotron {
+.jumbotron_about {
   text-align: center;
   margin-top: 9em;
   margin-bottom: 9em;
@@ -26,14 +26,16 @@
 
 
 /* PREMIER DECK DE CARTES BOOTSTRAP */
-.card-deck {
+.card_about {
   margin-top: 10em;
   width: auto;
 }
-.card-deck h5 {
+.card_about h5 {
+  font-weight: bold;
+  font-size: 25px;
   text-align: center;
 }
-.card-deck p {
+.card_about p {
   text-align: center;
 }
 
@@ -55,6 +57,17 @@
 /* NOS VALEURS */
 .valeurs_group {
   margin-top: 9em;
+  text-align: center;
+}
+
+/* SECOND DECK DE CARTES BOOTSTRAP */
+.card_about2 {
+  margin-top: 10em;
+  width: auto;
+}
+.card_about2 h5 {
+  font-weight: bold;
+  font-size: 25px;
   text-align: center;
 }
 .section_title {
@@ -80,7 +93,58 @@
 .launch {
   margin-top: 9em;
 }
+.btn_about {
+  margin-top: 2em;
+}
 
+@media (max-width: 800px) {
+  .discover {
+    display: flex;
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .card_about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .carousel-content {
+    display: flex;
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .valeurs_group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .card_about2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+  }
+}
+@media (max-width: 800px) {
+  .section_title {
+    display: flex;
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .team {
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+    margin: auto;
+  }
+}
 
 /* DASHBOARD.PHP */
 .contenant_dashboard {
@@ -90,6 +154,7 @@
   display: flex;
   justify-content: center;
   margin-top: 5em;
+  color: #ffffff;
 }
 .jumbotron2 {
   text-align: center;

@@ -14,7 +14,7 @@ $(document).ready(function() {
   });
 });
 
-/*var ctx = document.getElementById('myChart').getContext('2d');
+var ctx = document.getElementById('myChart').getContext('2d');
 Chart.defaults.global.defaultFontColor = '#ffffff';
 var myChart = new Chart(ctx, {
   type: 'bar',
@@ -76,4 +76,18 @@ var myChart2 = new Chart(ctx, {
       }]
     }
   }
-}); */
+});
+
+// function hexToIp(ip){
+//   var count = 0;
+//   var strToConvert = "";
+//   for (var i= 0; i < ip.length ; i++) {
+//     strToConvert += ip[i];
+//     count++;
+//     if(count === 2){
+//       console.log(strToConvert)
+//       convertBlock(strToConvert);
+//       count = 0;
+//     }
+//   }
+// }
