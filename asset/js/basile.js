@@ -106,7 +106,33 @@ $('#formlogin').on('submit', function(e) {
 
       } else {
         console.log('success');
-        window.location.reload();
+        //window.location.reload();
+        $.ajax({
+          type: 'GET',
+          url: 'https://floriandoyen.fr/resources/frames.php',
+          success: function(response){
+
+            var trames = response;
+            console.log(trames);
+            $.ajax({
+              type: 'POST',
+              url: 'ajax/ajax-trames.php',
+              data: {
+                 trames: trames,
+               },
+              dataType: 'json',
+              beforeSend: function() {
+                console.log('beforesend');
+              },
+              success: function(response) {
+                console.log(response);
+              }
+            });
+
+          }
+        });
+
+
 
       }
     }
