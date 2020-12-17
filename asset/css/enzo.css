@@ -1,17 +1,14 @@
 body {
-    background-color: #343A40;
+    background-color: #F8F9FA;
     font-family: 'Lato';
 }
 header {
-    background-color: #343A40;
+    background-color: #F8F9FA;
 }
 
-/* .navbar {
-    color: #343A40;
-} */
 .headcontain {
     max-width: 2000px;
-    background-color: #343A40;
+    background-color: #F8F9FA;
 }
 
 
@@ -22,20 +19,34 @@ header {
     width: 100%;
 }
 
-
 .btn {
     border: none;
     transition: 0.4s all;
-    color: #fff;
+
 }
 .btn:hover {
-    background-color: #07a9fc;
+    background-color: #0056B3;
+    color: #fff;
 }
-.cardhome {
-    width: 900px;
-    color: black;
+#icon img {
+    width: 33.33333%;
 }
-@media(min-width: 500px) and (max-width: 800px)
-{
 
+#contenu img {
+width: 550px;
+}
+
+@media(max-width: 800px)
+{
+    #contenu {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+@media(min-width: 1170px)
+{
+    #contenu img {
+        width: 700px;
+    }
 }

@@ -33,7 +33,7 @@
 
 
 
-        <nav class="navbar navbar-dark bg-dark">
+        <nav class="navbar navbar-light bg-light">
         <a class="btn" href="aboutus.php">Qui sommes-nous ?</a>
         <button type="button" class="btn " data-toggle="modal" data-target="#registerModal">
           Créer un compte
