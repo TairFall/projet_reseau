@@ -12,7 +12,7 @@
       <!-- section reseau sociaux -->
       <div class="mt-5 mb-5"></div>
 
-      <div class="d-flex justify-content-around mt-5 mb-5" id="social-icons"> 
+      <div class="d-flex justify-content-around mt-5 mb-5" id="social-icons">
           <a href="#" class="facebook"></a>
           <a href="#" class="twitter"></a>
           <a href="#" class="snapchat"></a>
@@ -25,19 +25,7 @@
           <p class="text-white">VIP Network est édité par VIP Network Team. Copyright &copy VIP Network Team 2020-2021. Tous droits réservés </p>
       </div>
     </div>
-    <!-- section reseau sociaux -->
-    <div>
-      <ul id="social-icons" >
-        <li><a href="#" class="facebook"></a></li>
-        <li><a href="#" class="twitter"></a></li>
-        <li><a href="#" class="snapchat"></a></li>
-        <li><a href="#" class="instagram"></a></li>
-      </ul>
-    </div>
-    <!-- section copyright -->
-    <div class="container-fluid d-flex justify-content-around" id="copyright">
-        <p>VIP Network est édité par VIP Network Team. Copyright &copy VIP Network Team 2020-2021. Tous droits réservés </p>
-    </div>
+
   </div>
 </footer>
 <!-- Bootstrap core JavaScript -->
