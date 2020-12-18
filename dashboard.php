@@ -1,6 +1,7 @@
 <?php
 session_start();
 require('inc/functions.php');
+require('inc/pdo.php');
 include('inc/header.php');
 ?>
 <div class="wrap1">
@@ -23,7 +24,7 @@ include('inc/header.php');
         <canvas id="myChart2" width="400" height="400"></canvas>
       </div>
     </div>
-
   </div>
 </div>
+<button id="bouton_test" type="button" name="button">Envoyer</button>
 <?php include('inc/footer.php');
