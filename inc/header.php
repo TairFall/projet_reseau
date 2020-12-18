@@ -124,14 +124,16 @@
                 <div id="email_login" class="form-group">
                   <label for="nom">Email</label>
                   <input type="email" id="lemail" name="lemail">
-                  <span class="error" id="lerror_email"></span>
+                  <!-- <span class="error" id="lerror_email"></span> -->
                 </div>
                 <div id="password_login_form" class="form-group">
                   <label for="lpassword">Mot de passe</label>
                   <input type="password" id="lpassword" name="lpassword">
-                  <span class="error" id="lpassword"></span>
+                  <!-- <span class="error" id="lpassword"></span> -->
                 </div>
-                <input id="submit_login" type="submit" value="Connexion" name="lsubmitted" class="btn btn-primary">
+                <span class="error" id="lerror_email"></span>
+                <span class="error" id="lpassword"></span>
+                <p class="mt-3 mb-3"><input id="submit_login" type="submit" value="Connexion" name="lsubmitted" class="btn btn-primary"></p>
               </form>
               <a class="forgot_pass" href="index.php">Mot de passe oublié ?</a>
             </div>

@@ -12,7 +12,7 @@ include('inc/header.php');
             <p>Le site N°1 pour mesurer les connexions entre utilisateurs</p>
         </div>
 
-        <!-- SECTION ICÔNE/CATCHA -->
+        <!-- SECTION ICÔNE/CATCHER -->
 
         <div id="icon" class="d-flex flex-row align-items-baseline mt-5 mb-5 pt-5 pb-5">
             <div id="image1" class="text-center flex-column">
@@ -34,25 +34,25 @@ include('inc/header.php');
 
     <!-- SECTION VITRINE -->
 
-        <div id="contenu" class="container-fluid mt-5 d-flex flex-row">
+        <div id="contenu" class="container-fluid mt-5 d-flex flex-row align-items-center">
             <img src="asset/flexslider/img/reseau.jpg" class="img-fluid " alt="Réseau">
-            <div class="container-fluid d-flex flex-column">
-                <h1 class="text-center mt-5 mb-4 text-uppercase text-primary">Réseau sécurisé</h1>
-                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni soluta et, error commodi nihil illo mollitia quae necessitatibus quia deserunt pariatur aliquam expedita dolor earum rem ut omnis voluptatum perferendis?</p>
+            <div class="container-fluid d-flex flex-column pb-5">
+                <h1 class="text-center text-uppercase text-primary mt-5 mb-4">Réseau sécurisé</h1>
+                <p class="text-center">Profitez d'un réseau sécurisé, adapté à vos besoin. Besoin d'un réseau d'entreprise rapide et sécurisé? Besoin d'un réseau rapide au sein de votre foyer? Network VIP est la solution !</p>
             </div>
         </div>
-        <div id="contenu" class="container-fluid mt-5 d-flex flex-row-reverse">
+        <div id="contenu" class="container-fluid mt-5 d-flex flex-row-reverse align-items-center">
             <img src="asset/flexslider/img/fibre.jpg" class="img-fluid" alt="Réseau">
-            <div class="container-fluid d-flex flex-column">
+            <div class="container-fluid d-flex flex-column pb-5">
                 <h1 class="text-center mt-5 mb-4 text-uppercase text-primary">Optez pour la rapidité et une utilisation intuitive</h1>
-                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni soluta et, error commodi nihil illo mollitia quae necessitatibus quia deserunt pariatur aliquam expedita dolor earum rem ut omnis voluptatum perferendis?</p>
+                <p class="text-center">Simple et rapide à installer, Network VIP fait partie des solutions les plus intuitives du marchés. Connectez vous, et boostez votre réseau dès maintenant !</p>
             </div>
         </div>
-        <div id="contenu" class="container-fluid mt-5 d-flex flex-row">
+        <div id="contenu" class="container-fluid mt-5 d-flex flex-row align-items-center">
             <img src="asset/flexslider/img/fibre2.jpg" class="img-fluid" alt="Réseau">
-            <div class="container-fluid d-flex flex-column">
+            <div class="container-fluid d-flex flex-column pb-5">
                 <h1 class="text-center mt-5 mb-4 text-uppercase text-primary">Testez votre réseau n'importe où, n'importe quand</h1>
-                <p class="text-center">Notre service est disponible, sur toutes plateformes, à tous moments de la journée, il suffit juste d'une connexion internet. Inscrivez-vous ou connectez-vous dès maintenant, pour profiter de ce service 100% gratuit.</p>
+                <p class="text-center">Besoin d'un test, d'une estimation ou de récolter des données, mais vous n'êtes pas sur place ? Grâce a Network VIP, Testez votre réseau n'importe où, aussi rapidement que sur le lieu d'installation de votre réseau.</p>
             </div>
         </div>
     </div>
