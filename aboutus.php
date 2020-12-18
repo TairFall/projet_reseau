@@ -5,12 +5,11 @@ include('inc/header.php');
 ?>
 
 <!-- JUMBOTRON -->
-<div class="jumbotron jumbotron-fluid jumbotron_about">
+<div class="jumbotron jumbotron-fluid jumbotron_about" id="accroche">
   <div class="head">
     <img id="logo_about" src="asset/img/logo.png">
-    <h1 class="display-4">Nous sommes NetworkVIP.</h1>
-    <h1 class="display-4">Nous prenons nos responsabilités.</h1>
-    <p class="lead">La connexion Internet de votre entreprise ou votre logement est de moins en moins fiable ?<br> Votre réseau rencontre des erreurs dont vous ignorez la cause ?<br> Avec NetworkVIP, vous disposez d’un outil de supervision du trafic réseau qui analyse votre consommation de données et met au jour les causes des problèmes qui perturbent votre réseau.</p>
+    <h1 class="display-4 mb-3">Nous sommes NetworkVIP.<br>Nous prenons nos responsabilités.</h1>
+    <p class="lead ml-5 mr-5">La connexion Internet de votre entreprise ou votre logement est de moins en moins fiable ?<br> Votre réseau rencontre des erreurs dont vous ignorez la cause ?<br> Avec NetworkVIP, vous disposez d’un outil de supervision du trafic réseau qui analyse votre consommation de données et met au jour les causes des problèmes qui perturbent votre réseau.</p>
   </div>
 </div>
 <div class="wrap1">
@@ -30,7 +29,7 @@ include('inc/header.php');
         <div class="card-body">
           <h5 class="card-title">Notre mode opératoire</h5>
           <hr>
-          <p class="card-text">Nous apprécions les difficultés liées à la complexité des infrastructures informatiques et réseaux, nos produits donnent à nos clients les moyens de superviser tout, et les aident ainsi à optimiser leurs ressources.</p>
+          <p class="card-text text-dark">Nous apprécions les difficultés liées à la complexité des infrastructures informatiques et réseaux, nos produits donnent à nos clients les moyens de superviser tout, et les aident ainsi à optimiser leurs ressources.</p>
         </div>
       </div>
       <div class="card .bg-light text-primary">
@@ -38,7 +37,7 @@ include('inc/header.php');
         <div class="card-body">
           <h5 class="card-title">Notre motivation</h5>
           <hr>
-          <p class="card-text">Nous pensons que la sécurité des informations de nos clients est d'une importance cruciale, nous mettons donc tout en oeuvres pour la garantir.</p>
+          <p class="card-text  text-dark">Nous pensons que la sécurité des informations de nos clients est d'une importance cruciale, nous mettons donc tout en oeuvres pour la garantir.</p>
         </div>
       </div>
       <div class="card .bg-light text-primary">
@@ -46,7 +45,7 @@ include('inc/header.php');
         <div class="card-body">
           <h5 class="card-title">Notre domaine de compétence</h5>
           <hr>
-          <p class="card-text">Nous proposons des solutions de supervision aux particuliers et entreprises dans le but de simplifier leurs tâches, en collaboration avec des partenaires de renom pour surmonter les défis de la supervision dans un monde virtuel en perpétuelle évolution.</p>
+          <p class="card-text text-dark">Nous proposons des solutions de supervision aux particuliers et entreprises dans le but de simplifier leurs tâches, en collaboration avec des partenaires de renom pour surmonter les défis de la supervision dans un monde virtuel en perpétuelle évolution.</p>
         </div>
       </div>
     </div>
@@ -95,7 +94,7 @@ include('inc/header.php');
             <h5 class="card-title">Nous plaçons le client
               au centre</h5>
               <hr>
-              <p class="card-text">
+              <p class="card-text text-dark">
                 Nous sommes nous-mêmes des professionnels de l’informatique. Le client est au cœur de tout ce que nous entreprenons.</p>
               </div>
             </div>
@@ -104,7 +103,7 @@ include('inc/header.php');
                 <h5 class="card-title">Nous cultivons
                   l’esprit d’équipe</h5>
                   <hr>
-                  <p class="card-text">Nous sommes heureux de transmettre nos connaissances entre collègues et toujours prêts à accueillir de nouveaux membres dans notre équipe.</p>
+                  <p class="card-text text-dark">Nous sommes heureux de transmettre nos connaissances entre collègues et toujours prêts à accueillir de nouveaux membres dans notre équipe.</p>
                 </div>
               </div>
               <div class="card .bg-light text-primary">
@@ -112,7 +111,7 @@ include('inc/header.php');
                   <h5 class="card-title">Nous visons
                     l’excellence</h5>
                     <hr>
-                    <p class="card-text">Nous remettons systématiquement en question nos pratiques et solutions pour faire rimer NetworkVIP avec qualité.</p>
+                    <p class="card-text text-dark">Nous remettons systématiquement en question nos pratiques et solutions pour faire rimer NetworkVIP avec qualité.</p>
                   </div>
                 </div>
               </div>
@@ -124,17 +123,23 @@ include('inc/header.php');
               <button type="button" class="btn btn-primary btn-lg">Notre équipe</button>
             </div>
             <hr class="my-4">
-            <div class="team">
+            <div class="container-fluid d-flex justify-content-around">
+              <div class="text-center">
               <img class="rounded-circle" height="180" src="https://www.pearlinux.fr/wp-content/uploads/2018/10/Discord.png" />
+              <p class="mt-4">Basile</p>
+              </div>
+              <div class="text-center">
               <img class="rounded-circle" height="180" width="180" src="asset/img/avatar-benj.png" />
+              <p class="mt-4">Benjamin</p>
+              </div>
+              <div class="text-center">
               <img class="rounded-circle" height="180" src="asset/img/avatar-enzo.png" />
+              <p class="mt-4">Enzo</p>
+              </div>
+              <div class="text-center">
               <img class="rounded-circle" height="180" src="https://directleaks.net/data/avatars/o/21/21204.jpg?1602018447" />
-            </div>
-            <div class="team_names">
-              <p>Basile</p>
-              <p>Benjamin</p>
-              <p>Enzo</p>
-              <p>Taïr</p>
+              <p class="mt-4">Taïr</p>
+              </div>
             </div>
 
 
