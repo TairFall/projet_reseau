@@ -1,7 +1,10 @@
 
 /* footer */
+#containerfooter {
+	background-color:#E9ECEF;
+}
 /* section contact */
-#containerfooter a{
+#enfantliens a{
 	text-decoration: none;
 	color: white;
 }

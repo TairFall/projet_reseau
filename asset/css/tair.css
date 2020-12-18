@@ -9,25 +9,26 @@
 #logo_about {
   max-width: 10%;
 }
+
 .jumbotron_about {
   text-align: center;
-  margin-top: 9em;
-  margin-bottom: 9em;
 }
 
+#accroche p{
+  line-height: 1.3em;
+}
 
 /* DECOUVREZ-NOUS */
 .discover {
   display: flex;
   justify-content: center;
-  margin-top: 9em;
   text-align: center;
 }
 
 
 /* PREMIER DECK DE CARTES BOOTSTRAP */
 .card_about {
-  margin-top: 10em;
+  margin-top: 2em;
   width: auto;
 }
 .card_about h5 {
@@ -37,8 +38,8 @@
 }
 .card_about p {
   text-align: center;
+  line-height: 1.3em;
 }
-
 
 /* CAROUSEL */
 .carousel-content {
@@ -49,21 +50,22 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 9em;
+  margin-top: 2em;
   width: 900px;
 }
 
 
 /* NOS VALEURS */
 .valeurs_group {
-  margin-top: 9em;
+  margin-top: 2em;
   text-align: center;
 }
 
 /* SECOND DECK DE CARTES BOOTSTRAP */
 .card_about2 {
-  margin-top: 10em;
+  margin-top: 2em;
   width: auto;
+  line-height: 1.3em;
 }
 .card_about2 h5 {
   font-weight: bold;
@@ -73,25 +75,14 @@
 .section_title {
   display: flex;
   justify-content: center;
-  margin-top: 9em;
+  margin-top: 2em;
 }
 
 /* NOTRE EQUIPE */
-.team {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 9em;
-}
-.team_names {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 2em;
-  font-size: 20px;
-}
 
 /* NETWORK VIP N'ATTEND PLUS QUE VOUS */
 .launch {
-  margin-top: 9em;
+  margin-top: 2em;
 }
 .btn_about {
   margin-top: 2em;

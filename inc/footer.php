@@ -1,12 +1,14 @@
 
     <!-- Footer -->
+<!-- permet de faire un "clear" entre footer et indexxxx -->
+    <div class="pt-3 pb-3"></div>
     <footer>
-    <div class="container-fluid">
+    <div class="container-fluid pt-2 pb-2" id="containerfooter">
     <!-- section contact -->
-      <div class="d-flex justify-content-around mt-5 mb-5 ml-4 mr-4 text-white" id="containerfooter">
-        <a class="text-decoration-none" href="#">Nous contacter</a>
-        <a class="text-decoration-none" href="#">F.A.Q</a>
-        <a class="text-decoration-none" href="#">Mentions légales</a>
+      <div class="d-flex justify-content-around mt-5 mb-5 ml-4 mr-4" id="enfantliens">
+        <a class="text-decoration-none text-dark" href="#">Nous contacter</a>
+        <a class="text-decoration-none text-dark" href="#">F.A.Q</a>
+        <a class="text-decoration-none text-dark" href="#">Mentions légales</a>
       </div>
 
       <!-- section reseau sociaux -->
@@ -22,7 +24,7 @@
       <div class="mt-5 mb-5"></div>
       <!-- section copyright -->
       <div class="container-fluid d-flex justify-content-center mt-5 mb-5" id="copyright">
-          <p class="text-white">VIP Network est édité par VIP Network Team. Copyright &copy VIP Network Team 2020-2021. Tous droits réservés </p>
+          <p class="text-dark">VIP Network est édité par VIP Network Team. Copyright &copy VIP Network Team 2020-2021. Tous droits réservés </p>
       </div>
     </div>
 
