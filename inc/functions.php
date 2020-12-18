@@ -315,16 +315,44 @@ function showJson($data)
   }
 }
 
-// function hexToIp($ip){
-// $ip = explode(" ", $ip);
-//   }
-//
-//
-// $iphexa = "c0a8014a";
-//
-// function convertToByte($hexa, $tableau){
-//   $totalDizaine = (int)$hexa[0] * (int)16;
-//   $totalDizaine = $tableau[$hexa[0]] * (int)16;
-//   $total = $totalDizaine + $tableau[$hexa[1]];
-//   return $total;
-// }
+
+
+///// HEXA TO IP //////
+
+
+function splite($iphexa){
+
+  $ip_split = str_split($iphexa,2);
+  return $ip_split;
+}
+
+
+function convertToByte($value,$tableau_conv){
+  $unite_hex = $value[1];
+  $dizaine_hex = $value[0];
+  $unite = $tableau_conv[$unite_hex][0];
+  $dizaine = $tableau_conv[$dizaine_hex][0];
+  $total = $dizaine * 16 + $unite;
+  return $total;
+}
+
+function hexatoIp($tableau_conv,$broke_ip)
+{
+
+  $array = array();
+  for ($i = 0; $i < count($broke_ip); $i++)
+  {
+    $value = $broke_ip[$i];
+    $ip = convertToByte($value,$tableau_conv);
+    $array[] = $ip;
+
+    if($i < 3)
+    {
+      $array[$i] .= '.';
+    }
+
+
+  }
+  $ip = implode($array);
+  return $ip;
+}
