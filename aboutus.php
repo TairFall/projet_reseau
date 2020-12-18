@@ -4,7 +4,7 @@ require('inc/functions.php');
 include('inc/header.php');
 ?>
 
-<!-- JUMBOTRON -->
+<!-- JUMBOTRON/ Presentation du site-->
 <div class="jumbotron jumbotron-fluid jumbotron_about" id="accroche">
   <div class="head">
     <img id="logo_about" src="asset/img/logo.png">
@@ -22,7 +22,7 @@ include('inc/header.php');
     </div>
 
 
-    <!-- PREMIER DECK DE CARTES BOOTSTRAP -->
+    <!-- PREMIER DECK DE CARTES BOOTSTRAP/utlisation de cartes pour étoffer la présentation du site -->
     <div class="card-deck card_about d-flex p-2">
       <div class="card .bg-light text-primary">
         <img class="card-img-top" src="asset/img/test.jpg" alt="Card image cap">
@@ -87,7 +87,7 @@ include('inc/header.php');
       <button type="button" class="btn btn-primary btn-lg">Nos valeurs</button>
 
 
-      <!-- SECOND DECK DE CARTES BOOTSTRAP -->
+      <!-- SECOND DECK DE CARTES BOOTSTRAP/presentation des valeurs de l'équipe -->
       <div class="card-deck card_about2">
         <div class="card .bg-light text-primary">
           <div class="card-body">
