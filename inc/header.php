@@ -34,7 +34,6 @@
 
 
         <nav class="navbar navbar-light bg-light">
-        <a class="btn" href="aboutus.php">Qui sommes-nous ?</a>
         <button type="button" class="btn " data-toggle="modal" data-target="#registerModal">
           Créer un compte
         </button>
@@ -46,12 +45,11 @@
 
         <?php if(isLoggedUser() || isLoggedAdmin()) { ?>
         <p>Bonjour <?= $_SESSION['user']['pseudo']; ?> </p>
-
-
         <button id="logout" type="button" class="btn ">
           Deconnexion
         </button>
         <?php } ?>
+        <a class="btn" href="aboutus.php">Qui sommes-nous ?</a>
         </nav>
   </div>
 </nav>

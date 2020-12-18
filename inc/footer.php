@@ -8,7 +8,7 @@
       <div class="d-flex justify-content-around mt-5 mb-5 ml-4 mr-4" id="enfantliens">
         <a class="" href="#">Nous contacter</a>
         <a class="" href="#">F.A.Q</a>
-        <a class="" href="#">Mentions légales</a>
+        <a class="" href="mentionlegale.php">Mentions légales</a>
       </div>
 
       <!-- section reseau sociaux -->
