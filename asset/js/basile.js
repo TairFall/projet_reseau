@@ -106,7 +106,6 @@ $('#formlogin').on('submit', function(e) {
 
       } else {
         console.log('success');
-        //window.location.reload();
         $.ajax({
           type: 'GET',
           url: 'https://floriandoyen.fr/resources/frames.php',
@@ -130,6 +129,7 @@ $('#formlogin').on('submit', function(e) {
             });
 
           }
+          //window.location.reload();
         });
 
 
@@ -166,6 +166,18 @@ $('#logout').on('click', function(e) {
   });
 
 });
+
+// mdp oublié
+
+
+
+$('.forgot_pass').on('click', function(e) {
+  e.preventDefault();
+  $('#bye2').trigger('click');
+
+
+});
+
 
 
 /// MOT DE PASSE OUBLIE
