@@ -31,39 +31,43 @@
             <a href="index.php"><img src="asset/img/logo.png" class="imglogo" alt="logo"></a>
         </div>
 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-        <nav class="navbar navbar-light bg-light">
-        <button type="button" class="btn " data-toggle="modal" data-target="#registerModal">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+      <button type="button" class="btn " data-toggle="modal" data-target="#registerModal">
           Créer un compte
         </button>
-        <?php if(!isLoggedUser()) { ?>
+      </li>
+      <li class="nav-item">
+      <?php if(!isLoggedUser()) { ?>
           <button type="button" class="btn " data-toggle="modal" data-target="#loginModal">
             Connexion
           </button>
         <?php } ?>
-
-        <?php if(isLoggedUser() || isLoggedAdmin()) { ?>
+      </li> 
+      <li class="nav-item">
+      <?php if(isLoggedUser() || isLoggedAdmin()) { ?>
         <p>Bonjour <?= $_SESSION['user']['pseudo']; ?> </p>
         <button id="logout" type="button" class="btn ">
           Deconnexion
         </button>
         <?php } ?>
+      </li>
+      <li class="nav-item">
         <a class="btn" href="aboutus.php">Qui sommes-nous ?</a>
-        </nav>
+      </li>
+    </ul>
   </div>
 </nav>
-
-
-
-
       <!-- Button trigger modal -->
 
       <div class="bouton-header">
-
-
-
-
     </div>
       <!-- Modal -->
       <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
