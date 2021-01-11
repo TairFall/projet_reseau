@@ -159,15 +159,14 @@
               </button>
             </div>
             <div class="modal-body">
-              <form id="formlogin" action="ajax/ajax-login.php" method="post">
+              <form id="formforget" action="ajax/ajax-forgot.php" method="post">
                 <div id="email_forgot" class="form-group">
-                  <label for="nom">Email</label>
-                  <input type="email" id="lemail" name="lemail">
+                  <label for="email">Email</label>
+                  <input type="email" id="lemaile" name="lemail">
                   <!-- <span class="error" id="lerror_email"></span> -->
                 </div>
                 <span class="error" id="lerror_email"></span>
-                <span class="error" id="lpassword"></span>
-                <p class="mt-3 mb-3"><input id="submit_login" type="submit" value="Connexion" name="lsubmitted" class="btn btn-primary"></p>
+                <p class="mt-3 mb-3"><input id="submit_forgot" type="submit" value="Connexion" name="lsubmitted" class="btn btn-primary"></p>
               </form>
             </div>
             <div class="modal-footer">

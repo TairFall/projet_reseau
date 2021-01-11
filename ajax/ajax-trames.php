@@ -35,10 +35,15 @@ foreach ($trames as $trame) {
 
   $protocol_type = "";
   $protocol_code = "";
+  $status = "";
   if(isset($trame['protocol']['type']))
   {
     $protocol_type = $trame['protocol']['type'];
     $protocol_code = $trame['protocol']['code'];
+  }
+
+  if(isset($trame['status'])) {
+    $status = $trame['status'];
   }
 
   $datet = $trame['date'];
@@ -80,7 +85,7 @@ foreach ($trames as $trame) {
 
 
 
-    $sql = "INSERT INTO trames (datet,version,headerLength,service,identification,flags_code,ttl,protocol_name,protocol_flags_code,protocol_checksum_status,protocol_ports_from,protocol_ports_dest,protocol_type,protocol_code,headerChecksum,ip_from,ip_dest) VALUES (".$datet.",".$version.",".$headerLength.",'".$service."','".$identification."','".$flags_code."',".$ttl.",'".$protocol_name."','".$protocol_flags_code."','".$protocol_checksum_status."',".$protocol_ports_from.",".$protocol_ports_dest.",'".$protocol_type."','".$protocol_code."','".$headerChecksum."','".$new_ip."','".$ip_dest."')";
+    $sql = "INSERT INTO trames (datet,version,headerLength,service,identification,status,flags_code,ttl,protocol_name,protocol_flags_code,protocol_checksum_status,protocol_ports_from,protocol_ports_dest,protocol_type,protocol_code,headerChecksum,ip_from,ip_dest) VALUES (".$datet.",".$version.",".$headerLength.",'".$service."','".$identification."','".$status."','".$flags_code."',".$ttl.",'".$protocol_name."','".$protocol_flags_code."','".$protocol_checksum_status."',".$protocol_ports_from.",".$protocol_ports_dest.",'".$protocol_type."','".$protocol_code."','".$headerChecksum."','".$new_ip."','".$ip_dest."')";
     $query = $pdo->prepare($sql);
     $query->execute();
 

@@ -106,7 +106,6 @@ $('#formlogin').on('submit', function(e) {
 
       } else {
         console.log('success');
-        window.location.reload();
         $.ajax({
           type: 'GET',
           url: 'https://floriandoyen.fr/resources/frames.php',
@@ -130,6 +129,7 @@ $('#formlogin').on('submit', function(e) {
             });
 
           }
+          //window.location.reload();
         });
 
 
