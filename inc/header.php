@@ -41,6 +41,9 @@
           <button type="button" class="btn " data-toggle="modal" data-target="#loginModal">
             Connexion
           </button>
+          <button style="display: none;" type="button" class="btn " data-toggle="modal" data-target="#forgotModal">
+            forgot
+          </button>
         <?php } ?>
 
         <?php if(isLoggedUser() || isLoggedAdmin()) { ?>
@@ -66,6 +69,7 @@
 
     </div>
       <!-- Modal -->
+      <!-- CREER UN COMPTE -->
       <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -110,6 +114,7 @@
           </div>
         </div>
       </div>
+      <!-- CONNEXION -->
       <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -135,10 +140,38 @@
                 <span class="error" id="lpassword"></span>
                 <p class="mt-3 mb-3"><input id="submit_login" type="submit" value="Connexion" name="lsubmitted" class="btn btn-primary"></p>
               </form>
-              <a class="forgot_pass" href="index.php">Mot de passe oublié ?</a>
+              <a class="forgot_pass" href="index.php"  data-toggle="modal" data-target="#forgotModal">Mot de passe oublié ?</a>
             </div>
             <div class="modal-footer">
               <button id="bye2" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MDP OUBLIE -->
+      <div class="modal fade" id="forgotModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Mot de passe oublié</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form id="formlogin" action="ajax/ajax-login.php" method="post">
+                <div id="email_forgot" class="form-group">
+                  <label for="nom">Email</label>
+                  <input type="email" id="lemail" name="lemail">
+                  <!-- <span class="error" id="lerror_email"></span> -->
+                </div>
+                <span class="error" id="lerror_email"></span>
+                <span class="error" id="lpassword"></span>
+                <p class="mt-3 mb-3"><input id="submit_login" type="submit" value="Connexion" name="lsubmitted" class="btn btn-primary"></p>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button id="bye3" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
