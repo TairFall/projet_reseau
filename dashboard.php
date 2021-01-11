@@ -26,5 +26,6 @@ include('inc/header.php');
     </div>
   </div>
 </div>
-<button id="bouton_test" type="button" name="button">Envoyer</button>
+
+
 <?php include('inc/footer.php');
