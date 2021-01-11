@@ -72,6 +72,24 @@ h1 {
     text-decoration: underline;
 }
 
+/* FAQ */
+
+#faq {
+    text-align: center;
+    background-color: #E9ECEF;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+}
+.minititre {
+    margin-bottom: 20px;
+    margin-top: 40px;
+    text-decoration: underline;
+}
+
+
 /* RESPONSIVE */
 
 @media(max-width: 800px)
