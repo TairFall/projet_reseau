@@ -31,41 +31,43 @@
             <a href="index.php"><img src="asset/img/logo.png" class="imglogo" alt="logo"></a>
         </div>
 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-        <nav class="navbar navbar-light bg-light">
-        <a class="btn" href="aboutus.php">Qui sommes-nous ?</a>
-        <button type="button" class="btn " data-toggle="modal" data-target="#registerModal">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+      <button type="button" class="btn " data-toggle="modal" data-target="#registerModal">
           Créer un compte
         </button>
-        <?php if(!isLoggedUser()) { ?>
+      </li>
+      <li class="nav-item">
+      <?php if(!isLoggedUser()) { ?>
           <button type="button" class="btn " data-toggle="modal" data-target="#loginModal">
             Connexion
           </button>
         <?php } ?>
-
-        <?php if(isLoggedUser() || isLoggedAdmin()) { ?>
+      </li> 
+      <li class="nav-item">
+      <?php if(isLoggedUser() || isLoggedAdmin()) { ?>
         <p>Bonjour <?= $_SESSION['user']['pseudo']; ?> </p>
-
-
         <button id="logout" type="button" class="btn ">
           Deconnexion
         </button>
         <?php } ?>
-        </nav>
+      </li>
+      <li class="nav-item">
+        <a class="btn" href="aboutus.php">Qui sommes-nous ?</a>
+      </li>
+    </ul>
   </div>
 </nav>
-
-
-
-
       <!-- Button trigger modal -->
 
       <div class="bouton-header">
-
-
-
-
     </div>
       <!-- Modal -->
       <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -126,14 +128,16 @@
                 <div id="email_login" class="form-group">
                   <label for="nom">Email</label>
                   <input type="email" id="lemail" name="lemail">
-                  <span class="error" id="lerror_email"></span>
+                  <!-- <span class="error" id="lerror_email"></span> -->
                 </div>
                 <div id="password_login_form" class="form-group">
                   <label for="lpassword">Mot de passe</label>
                   <input type="password" id="lpassword" name="lpassword">
-                  <span class="error" id="lpassword"></span>
+                  <!-- <span class="error" id="lpassword"></span> -->
                 </div>
-                <input id="submit_login" type="submit" value="Connexion" name="lsubmitted" class="btn btn-primary">
+                <span class="error" id="lerror_email"></span>
+                <span class="error" id="lpassword"></span>
+                <p class="mt-3 mb-3"><input id="submit_login" type="submit" value="Connexion" name="lsubmitted" class="btn btn-primary"></p>
               </form>
               <a class="forgot_pass" href="index.php">Mot de passe oublié ?</a>
             </div>

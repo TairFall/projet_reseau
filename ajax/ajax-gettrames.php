@@ -3,6 +3,7 @@ require('../inc/functions.php');
 require('../inc/pdo.php');
 
 
+
 $sql = "SELECT COUNT(protocol_name) AS nbr , protocol_name FROM trames GROUP BY protocol_name";
 $query = $pdo->prepare($sql);
 $query->execute();
@@ -25,3 +26,4 @@ $status = $query->fetchColumn();
 $show = [$protocol_names, $ttl,$total, $status];
 showJson($show);
 ?>
+

@@ -14,7 +14,7 @@ header {
 }
 
 .logo {
-    width: 25%;
+    width: 200px;
 }
 .imglogo {
     width: 100%;
@@ -30,11 +30,7 @@ header {
     color: #fff;
 }
 
-.dropdown img {
-    width: 25px;
-}
-
-/* BODY */
+/* BODY/INDEX */
 #icon {
     background-color: #E9ECEF;
 }
@@ -60,6 +56,40 @@ h1 {
 }
 
 
+/* MENTION */
+#mention {
+    text-align: center;
+    background-color: #E9ECEF;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+}
+.minititre {
+    margin-bottom: 20px;
+    margin-top: 40px;
+    text-decoration: underline;
+}
+
+/* FAQ */
+
+#faq {
+    text-align: center;
+    background-color: #E9ECEF;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+}
+.minititre {
+    margin-bottom: 20px;
+    margin-top: 40px;
+    text-decoration: underline;
+}
+
+
 /* RESPONSIVE */
 
 @media(max-width: 800px)
@@ -77,12 +107,13 @@ h1 {
     }
 }
 
-@media(max-width: 650px)
+@media(max-width: 710px)
 {
     .navbar{
-    
+        display: flex;
+        justify-content: center;
     }
-    .logo  img {
+    .logo img {
         width: 148px;
         height: 155px;
     }

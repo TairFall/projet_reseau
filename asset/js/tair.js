@@ -1,3 +1,4 @@
+// CAROUSEL ABOUTUS
 $(document).ready(function() {
   $("#carouselExampleControls").carousel();
 
