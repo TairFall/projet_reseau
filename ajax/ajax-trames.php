@@ -97,3 +97,4 @@ foreach ($trames as $trame) {
       $query->execute();
 
     }
+  }
