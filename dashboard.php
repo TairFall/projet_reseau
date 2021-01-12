@@ -8,7 +8,7 @@ include('inc/header.php');
   <div class="page_title">
     <div class="jumbotron2">
       <h1 class="display-4">Votre Espace Client</h1>
-      <p class="lead">Voici votre espace client personnel, vous pourrez à partir d'ici visualiser les différentes statistiques liées à votre réseau.</p>
+      <p class="lead">Voici votre espace client personnel, vous pourrez à partir d'ici visualiser les différentes statistiques liées au réseau.</p>
       <hr class="my-4">
     </div>
 </div>
@@ -23,9 +23,11 @@ include('inc/header.php');
       <div class="graph2">
         <canvas id="myChart2" width="400" height="400"></canvas>
       </div>
-    </div>
+      <!-- TROISIEME GRAPHIQUE -->
+      <div class="graph3">
+        <canvas id="myChart3" width="400" height="400"></canvas>
+      </div>
   </div>
 </div>
-
 
 <?php include('inc/footer.php');
