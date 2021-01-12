@@ -2,6 +2,7 @@
 session_start();
 
 require('inc/functions.php');
+require('inc/pdo.php');
 include('inc/header.php');
 ?>
 <div class="wrap4">
