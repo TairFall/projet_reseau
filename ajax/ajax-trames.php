@@ -77,17 +77,16 @@ foreach ($trames as $trame) {
 
 
     /// VERIF QUE TOTO N'EXISTE PAS DEJA POUR PAS FAIRE DOUBLON BDD
-    /*$sql = "SELECT * FROM trames WHERE datet = '$datet' AND protocol_name = '$protocol_name' AND identification = '$identification' AND protocol_flags_code = '$protocol_flags_code'";
+    $sql = "SELECT * FROM trames WHERE datet = '$datet' AND protocol_name = '$protocol_name' AND identification = '$identification' AND protocol_flags_code = '$protocol_flags_code'";
     $query = $pdo->prepare($sql);
     $query->execute();
-    $trameExist = $query->fetch();*/
+    $trameExist = $query->fetch();
 
+    if(empty($trameExist)) {
 
-
-
-    $sql = "INSERT INTO trames (datet,version,headerLength,service,identification,status,flags_code,ttl,protocol_name,protocol_flags_code,protocol_checksum_status,protocol_ports_from,protocol_ports_dest,protocol_type,protocol_code,headerChecksum,ip_from,ip_dest) VALUES (".$datet.",".$version.",".$headerLength.",'".$service."','".$identification."','".$status."','".$flags_code."',".$ttl.",'".$protocol_name."','".$protocol_flags_code."','".$protocol_checksum_status."',".$protocol_ports_from.",".$protocol_ports_dest.",'".$protocol_type."','".$protocol_code."','".$headerChecksum."','".$new_ip."','".$ip_dest."')";
-    $query = $pdo->prepare($sql);
-    $query->execute();
-
+      $sql = "INSERT INTO trames (datet,version,headerLength,service,identification,status,flags_code,ttl,protocol_name,protocol_flags_code,protocol_checksum_status,protocol_ports_from,protocol_ports_dest,protocol_type,protocol_code,headerChecksum,ip_from,ip_dest) VALUES (".$datet.",".$version.",".$headerLength.",'".$service."','".$identification."','".$status."','".$flags_code."',".$ttl.",'".$protocol_name."','".$protocol_flags_code."','".$protocol_checksum_status."',".$protocol_ports_from.",".$protocol_ports_dest.",'".$protocol_type."','".$protocol_code."','".$headerChecksum."','".$new_ip."','".$ip_dest."')";
+      $query = $pdo->prepare($sql);
+      $query->execute();
+    }
 
 }
