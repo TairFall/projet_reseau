@@ -6,7 +6,7 @@
     <div class="container-fluid pt-2 pb-2" id="containerfooter">
     <!-- section contact -->
       <div class="d-flex justify-content-around mt-5 mb-5 ml-4 mr-4" id="enfantliens">
-        <a class="" href="#">Nous contacter</a>
+        <a class="" href="nouscontacter.php">Nous contacter</a>
         <a class="" href="faq.php">F.A.Q</a>
         <a class="" href="mentionlegale.php">Mentions légales</a>
       </div>
@@ -14,7 +14,7 @@
       <!-- section reseau sociaux -->
       <div class="mt-5 mb-5"></div>
 
-      <div class="d-flex justify-content-around mt-5 mb-5" id="social-icons">
+      <div class="d-flex justify-content-around w-75 ml-auto mr-auto mt-5 mb-5" id="social-icons">
           <a href="#" class="facebook"></a>
           <a href="#" class="twitter"></a>
           <a href="#" class="snapchat"></a>
@@ -23,8 +23,10 @@
 
       <div class="mt-5 mb-5"></div>
       <!-- section copyright -->
-      <div class="container-fluid d-flex justify-content-center mt-5 mb-5" id="copyright">
-          <p class="text-dark">VIP Network est édité par VIP Network Team. Copyright &copy VIP Network Team 2020-2021. Tous droits réservés </p>
+      <div class="container-fluid d-flex justify-content-center  mt-5 mb-5" id="copyright">
+          <img src="asset/img/logo.png" id="imgfooter" class="img-fluid" alt="logo">
+          <p class="text-dark text-center align-self-center">VIP Network est édité par VIP Network Team. Copyright &copy VIP Network Team 2020-2021. Tous droits réservés </p>
+          <img src="asset/img/logo.png" id="imgfooter" 
       </div>
     </div>
 

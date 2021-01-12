@@ -140,6 +140,8 @@
 /* DASHBOARD.PHP */
 .contenant_dashboard {
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .page_title {
   display: flex;
@@ -149,6 +151,8 @@
 }
 .jumbotron2 {
   text-align: center;
+  color: #000000;
+  margin-bottom: 5em;
 }
 
 .jumbotron2 p{
@@ -156,26 +160,11 @@
 }
 
 canvas {
-  max-width: 500px;
-}
-.graphiques {
-  display:flex;
-  max-width: 1900px;
+  max-width: 400px;
 }
 
-.graph1 {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  height:40vh;
-  width:80vw;
-  margin-top: 9em;
-}
-.graph2 {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  height:40vh;
-  width:80vw;
-  margin-top: 9em;
+.graphiques {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
 }

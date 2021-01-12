@@ -24,26 +24,44 @@
 </head>
 <body>
 <!-- <header class="masthead text-white text-center"> -->
-  <!-- Navigation -->
-  <nav class="navbar navbar-light static-top">
+  
+<nav class="navbar navbar-light static-top">
     <div class="container headcontain">
         <div class="logo">
             <a href="index.php"><img src="asset/img/logo.png" class="imglogo" alt="logo"></a>
         </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
+  <!-- Navbar responsive avec modal -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!-- bouton collapse pour le menu burger responsive -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
     <ul class="navbar-nav mr-auto">
+    <!-- Si l'utilisateur est log, on affiche un message d'acceuil et un bouton déconnexion -->
+    <li class="navbar-text text-body">
+      <?php if(isLoggedUser() || isLoggedAdmin()) { ?>
+        <p>Bonjour <?= $_SESSION['user']['pseudo']; ?> </p>
+      </li> 
       <li class="nav-item">
+        <button id="logout" type="button" class="btn ">
+          Déconnexion
+        </button>
+        <?php } ?>
+        <!-- Si l'utilisateur n'est pas log, on lui propose une création de compte -->
+      <li class="nav-item">
+      <?php if(!isLoggedUser()) { ?>
       <button type="button" class="btn " data-toggle="modal" data-target="#registerModal">
           Créer un compte
         </button>
+        <button style="display: none;" type="button" class="btn " data-toggle="modal" data-target="#forgotModal">
+            forgot
+          </button>
+        <?php } ?>
       </li>
+      <!-- Si l'utilisateur n'est pas log, on lui propose une connexion a son compte -->
       <li class="nav-item">
       <?php if(!isLoggedUser()) { ?>
           <button type="button" class="btn " data-toggle="modal" data-target="#loginModal">
@@ -53,25 +71,21 @@
             forgot
           </button>
         <?php } ?>
-      </li>
-      <li class="nav-item">
-      <?php if(isLoggedUser() || isLoggedAdmin()) { ?>
-        <p>Bonjour <?= $_SESSION['user']['pseudo']; ?> </p>
-        <button id="logout" type="button" class="btn ">
-          Deconnexion
-        </button>
-        <?php } ?>
-      </li>
+
+      </li> 
+      <!-- Renvoi vers une page du site -->
       <li class="nav-item">
         <a class="btn" href="aboutus.php">Qui sommes-nous ?</a>
       </li>
+      <!-- si l'admin ou l'user est log, on lui propose une redirection vers le dashboard -->
+      <li class="nav-item">
+        <?php if(isLoggedUser() || isLoggedAdmin()) { ?>
+        <a class="btn" href="dashboard.php">Dashboard</a>
+        <?php } ?>
+      </li>
     </ul>
   </div>
-</nav>
-      <!-- Button trigger modal -->
-
-      <div class="bouton-header">
-    </div>
+</nav> 
       <!-- Modal -->
       <!-- CREER UN COMPTE -->
       <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -88,16 +102,19 @@
                 <div class="form-group">
                   <label for="nom">Nom*</label>
                   <input type="text" id="nom" name="nom">
+                  <br>
                   <span class="error" id="error_nom"></span>
                 </div>
                 <div class="form-group">
                   <label for="prenom">Prenom*</label>
                   <input type="text" id="prenom" name="prenom">
+                  <br>
                   <span class="error" id="error_prenom"></span>
                 </div>
                 <div class="form-group">
                   <label for="email">Email*</label>
                   <input type="email" id="email" name="email">
+                  <br>
                   <span class="error" id="error_email"></span>
                 </div>
                 <div class="form-group">
@@ -107,6 +124,7 @@
                 <div class="form-group">
                   <label for="password">Password Confirmation*</label>
                   <input type="password" id="password2" name="password2">
+                  <br>
                   <span class="error" id="error_password"></span>
                 </div>
                 <input type="submit" value="Inscription" name="submitted" class="btn btn-primary">
