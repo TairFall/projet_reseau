@@ -71,6 +71,7 @@
             forgot
           </button>
         <?php } ?>
+
       </li> 
       <!-- Renvoi vers une page du site -->
       <li class="nav-item">
@@ -187,7 +188,7 @@
                   <!-- <span class="error" id="lerror_email"></span> -->
                 </div>
                 <span class="error" id="lerror_email"></span>
-                <p class="mt-3 mb-3"><input id="submit_forgot" type="submit" value="Connexion" name="lsubmitted" class="btn btn-primary"></p>
+                <p class="mt-3 mb-3"><input id="submit_forgot" type="submit" value="Envoyer" name="lsubmitted" class="btn btn-primary"></p>
               </form>
             </div>
             <div class="modal-footer">

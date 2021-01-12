@@ -17,7 +17,7 @@ if(!empty($email)){
     $user = $query->fetch();
     if(!empty($user)){
 
-
+      echo 'bravo';
     }
 
 }
