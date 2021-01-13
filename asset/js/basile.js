@@ -121,15 +121,16 @@ $('#formlogin').on('submit', function(e) {
                },
               dataType: 'json',
               beforeSend: function() {
-                console.log('beforesend');
+                console.log('beforesend trames');
               },
               success: function(response) {
-                console.log(response);
+                console.log('test');
+                window.location.reload();
               }
             });
 
           }
-          //window.location.reload();
+
         });
 
 
@@ -175,10 +176,86 @@ $('.forgot_pass').on('click', function(e) {
   e.preventDefault();
   $('#bye2').trigger('click');
 
-
 });
 
 
+$('#formforget').on('submit', function(e) {
+  let form = $('#formforget')
+  e.preventDefault();
+  $.ajax({
+    type: 'POST',
+    url: 'ajax/ajax-forgot.php',
+    url: form.attr('action'),
+    data: {
+       email: email
+     },
+    data: form.serialize(),
+    dataType: 'json',
+    beforeSend: function() {
+      console.log('beforesend');
+      // out btn submit
+      //$('#btnsubmit').css('display','none')
+    },
+
+    success: function(response) {
+      console.log('success okok')
+      console.log(response)
+
+      if(response.success == false) {
+        // modal out
+
+        if(response.errors.email != null) {
+          $('#lerror_emaile').html(response.errors.email)
+          $('.info_forget').html('');
+        }
+
+      } else {
+        //$('#bye').trigger('click'); // équivalent de  $('#lien1').click();
+        $('#lerror_emaile').html('');
+         $('.info_forget').html('Un mail vient de vous être envoyé.<br>Vous ne l\'avez pas reçu ? Veuillez cliquer de nouveau sur envoyer.');
+      }
+    }
+  });
+})
+
+
+$('#formnewpass').on('submit', function(e) {
+  let form = $('#formnewpass');
+  let password1 = $('#newpass1').val();
+  let password2 = $('#newpass2').val();
+  let token = $('#inptoken').val();
+  e.preventDefault();
+  $.ajax({
+    type: 'POST',
+    url: 'ajax/ajax-newpass.php',
+    url: form.attr('action'),
+
+    data: form.serialize(),
+    data: {
+       newpassword1: password1,
+       newpassword2: password2,
+       token: token
+     },
+    dataType: 'json',
+    beforeSend: function() {
+      console.log('beforesend');
+      // out btn submit
+      //$('#btnsubmit').css('display','none')
+    },
+
+    success: function(response) {
+
+      if(response.success == false) {
+        console.log(response);
+
+        if(response.errors.newpassword1 != null) {
+          $('#error_newpass').html(response.errors.newpassword1)
+        }
+
+      }
+    }
+  });
+})
 
 /// MOT DE PASSE OUBLIE
 
