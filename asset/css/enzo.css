@@ -90,6 +90,19 @@ h1 {
     text-decoration: underline;
 }
 
+/* 404 */
+
+ .erreur {
+    background-color: #141014;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+
+.aie {
+    font-size: 2em;
+}
+
 
 /* RESPONSIVE */
 

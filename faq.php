@@ -15,7 +15,8 @@ include('inc/header.php');
         <div id="contenu" class="container-fluid mt-5 d-flex flex-row align-items-center">
             <h1 class="faq">Impossible de me connecter à mon compte, que faire ?</h1>
             <div class="container-fluid d-flex mt-5 flex-column pb-5">
-                <p class="text-center">Assurez vous de n'avoir fais aucune faute dans vos identifiants de connexion, sinon dirigez vous vers le bouton <a href="#">mot de passe oublié.</a></p>
+                <p class="text-center">Assurez vous de n'avoir fais aucune faute dans vos identifiants de connexion, sinon dirigez vous vers le bouton <a class="forgot_pass" href="index.php"  data-toggle="modal" data-target="#forgotModal">Mot de passe oublié </a>
+
             </div>
         </div>
         <div id="contenu" class="container-fluid mt-5 d-flex flex-row align-items-center">
