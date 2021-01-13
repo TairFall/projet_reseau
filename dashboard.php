@@ -27,6 +27,9 @@ include('inc/header.php');
       <div class="graph3">
         <canvas id="myChart3" width="400" height="400"></canvas>
       </div>
+      <div class="graph4">
+        <canvas id="lineex" width="400" height="400"></canvas>
+      </div>
   </div>
 </div>
 

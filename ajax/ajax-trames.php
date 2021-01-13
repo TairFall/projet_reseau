@@ -98,3 +98,6 @@ foreach ($trames as $trame) {
 
     }
   }
+  $data = 'dfdf';
+
+showJson($data);

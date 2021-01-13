@@ -24,7 +24,7 @@
 </head>
 <body>
 <!-- <header class="masthead text-white text-center"> -->
-  
+
 <nav class="navbar navbar-light static-top">
     <div class="container headcontain">
         <div class="logo">
@@ -44,7 +44,7 @@
     <li class="navbar-text text-body">
       <?php if(isLoggedUser() || isLoggedAdmin()) { ?>
         <p>Bonjour <?= $_SESSION['user']['pseudo']; ?> </p>
-      </li> 
+      </li>
       <li class="nav-item">
         <button id="logout" type="button" class="btn ">
           Déconnexion
@@ -72,7 +72,7 @@
           </button>
         <?php } ?>
 
-      </li> 
+      </li>
       <!-- Renvoi vers une page du site -->
       <li class="nav-item">
         <a class="btn" href="aboutus.php">Qui sommes-nous ?</a>
@@ -85,7 +85,7 @@
       </li>
     </ul>
   </div>
-</nav> 
+</nav>
       <!-- Modal -->
       <!-- CREER UN COMPTE -->
       <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -187,7 +187,8 @@
                   <input type="email" id="lemaile" name="lemail">
                   <!-- <span class="error" id="lerror_email"></span> -->
                 </div>
-                <span class="error" id="lerror_email"></span>
+                <span class="error" id="lerror_emaile"></span>
+                <span class="info_forget"></span>
                 <p class="mt-3 mb-3"><input id="submit_forgot" type="submit" value="Envoyer" name="lsubmitted" class="btn btn-primary"></p>
               </form>
             </div>
