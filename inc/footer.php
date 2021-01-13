@@ -26,7 +26,7 @@
       <div class="container-fluid d-flex justify-content-center  mt-5 mb-5" id="copyright">
           <img src="asset/img/logo.png" id="imgfooter" class="img-fluid" alt="logo">
           <p class="text-dark text-center align-self-center">VIP Network est édité par VIP Network Team. Copyright &copy VIP Network Team 2020-2021. Tous droits réservés </p>
-          <img src="asset/img/logo.png" id="imgfooter" 
+          <img src="asset/img/logo.png" id="imgfooter"> 
       </div>
     </div>
 
