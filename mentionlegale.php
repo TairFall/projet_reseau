@@ -20,7 +20,7 @@ include('inc/header.php');
             </div>
             <h1 class="minititre">Edition du site</h1>
             <div class="mention-text">
-                <p>Le site networkvip.fr est édité par la société VIP Network, société par actions simplifiée au capital de 10.051,50 euros, dont le siège social est situé 24 place Saint Marc, 76000 Rouen.</p>
+                <p>Le site networkvip.fr est édité par la société NetworkVIP, société par actions simplifiée au capital de 10.051,50 euros, dont le siège social est situé 24 place Saint Marc, 76000 Rouen.</p>
             </div>
             <h1 class="minititre">Responsable de publication</h1>
             <div class="mention-text">
@@ -29,13 +29,13 @@ include('inc/header.php');
             <h1 class="minititre">Hébergeur</h1>
             <div class="mention-text">
                 <p>Le site networkvip.fr est hébergé par NFactory School<br>Adresse: 24 place Saint Marc<br>
-                    Le stockage des données personnelles des Utilisateurs est exclusivement réalisé sur les centre de données (« clusters ») localisés dans des Etats membres de l’Union Européenne de l'établissement NFactory School, et est sécurisé et crypté.</p>
+                    Le stockage des données personnelles des Utilisateurs est exclusivement réalisé sur les centre de données (« clusters ») localisés dans des États membres de l’Union Européenne de l'établissement NFactory School. Et est sécurisé et crypté.</p>
             </div>
             <h1 class="minititre">CNIL</h1>
             <div class="mention-text">
-                <p>La société Vaccin'Corp conservera dans ses systèmes informatiques et dans des conditions raisonnables de sécurité une preuve de la transaction comprenant le bon de commande et la facture.</p>
+                <p>La société NetworkVIP conservera dans ses systèmes informatiques et dans des conditions raisonnables de sécurité une preuve de la transaction comprenant le bon de commande et la facture.</p>
                 <p>La société VIP Network a fait l’objet d’une déclaration à la CNIL sous le numéro 1986932.</p>
-                <p>Conformément aux dispositions de la loi 78-17 du 6 janvier 1978 modifiée, l’Utilisateur dispose d’un droit d’accès, de modification et de suppression des informations collectées par Vaccin'Corp. Pour exercer ce droit, il reviendra à l’utilisateur d’envoyer un message à l’adresse suivante : network@vip.fr</p>
+                <p>Conformément aux dispositions de la loi 78-17 du 6 janvier 1978 modifiée, l’utilisateur dispose d’un droit d’accès, de modification et de suppression des informations collectées par NetworkVIP. Pour exercer ce droit, il reviendra à l’utilisateur d’envoyer un message à l’adresse suivante : network@vip.fr</p>
             </div>
         </div>
     </div>
