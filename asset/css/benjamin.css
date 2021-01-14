@@ -63,3 +63,10 @@
 	height: 10%;
 }
 /* responsive */
+@media(max-width: 525px)
+{
+	#navbarcollapse{
+		background-color: red;
+		width: 50%;
+	}
+}
