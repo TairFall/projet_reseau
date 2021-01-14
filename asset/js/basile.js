@@ -174,6 +174,7 @@ $('#logout').on('click', function(e) {
 
 $('.forgot_pass').on('click', function(e) {
   e.preventDefault();
+  console.log('ferme');
   $('#bye2').trigger('click');
 
 });
@@ -221,9 +222,9 @@ $('#formforget').on('submit', function(e) {
 
 $('#formnewpass').on('submit', function(e) {
   let form = $('#formnewpass');
-  let password1 = $('#newpass1').val();
-  let password2 = $('#newpass2').val();
-  let token = $('#inptoken').val();
+  let newpassword1 = $('#newpassword1').val();
+  let newpassword2 = $('#newpassword2').val();
+  let token = $('#token').val();
   e.preventDefault();
   $.ajax({
     type: 'POST',
@@ -232,8 +233,8 @@ $('#formnewpass').on('submit', function(e) {
 
     data: form.serialize(),
     data: {
-       newpassword1: password1,
-       newpassword2: password2,
+       newpassword1: newpassword1,
+       newpassword2: newpassword2,
        token: token
      },
     dataType: 'json',
@@ -244,6 +245,7 @@ $('#formnewpass').on('submit', function(e) {
     },
 
     success: function(response) {
+      console.log('test');
 
       if(response.success == false) {
         console.log(response);
@@ -252,6 +254,13 @@ $('#formnewpass').on('submit', function(e) {
           $('#error_newpass').html(response.errors.newpassword1)
         }
 
+      }
+      else {
+        console.log('test');
+        $('.wrap1formnew').fadeOut(1000);
+        $('.info_newpass').html('<p>Mot de passe modifié avec succès.</p>');
+        $('.info_newpass').fadeOut(0);
+        $('.info_newpass').fadeIn(1000);
       }
     }
   });

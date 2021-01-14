@@ -93,7 +93,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">Créer un compte</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
@@ -131,7 +131,7 @@
               </form>
             </div>
             <div class="modal-footer">
-              <button id="bye" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button id="bye" type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
             </div>
           </div>
         </div>
@@ -142,7 +142,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
@@ -165,7 +165,7 @@
               <a class="forgot_pass" href="index.php"  data-toggle="modal" data-target="#forgotModal">Mot de passe oublié ?</a>
             </div>
             <div class="modal-footer">
-              <button id="bye2" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button id="bye2" type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
             </div>
           </div>
         </div>
@@ -176,7 +176,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">Mot de passe oublié</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
@@ -193,7 +193,7 @@
               </form>
             </div>
             <div class="modal-footer">
-              <button id="bye3" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button id="bye3" type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
             </div>
           </div>
         </div>
