@@ -3,9 +3,20 @@ session_start();
 
 require('inc/functions.php');
 include('inc/header.php');
+$new = false;
+if(!empty($_GET['id'])){
+  if ($_GET['id'] == 'new'){
+    $new = true;
+  }
+}
 ?>
 <div class="wrap1">
     <div class="container-fluid mb-5">
+        <?php
+        if ($new == true){ ?>
+          <p class="text-center font-weight-bold">Votre compte est validé, vous pouvez vous connecter !</p>
+      <?php  }
+         ?>
         <div id="titre" class="d-flex flex-column text-center mt-5 mb-5">
             <h1 id="bienvenue" class="text-uppercase text-primary mb-2">Bienvenue chez NetworkVIP</h1>
             <br>

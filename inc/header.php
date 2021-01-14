@@ -129,6 +129,10 @@
                 </div>
                 <input type="submit" value="Inscription" name="submitted" class="btn btn-primary">
               </form>
+              <div style="display: none;" class="info_create">
+                <p>Veuillez cliquer sur le lien que vous venez de recevoir par mail pour valider votre compte.</p>
+                <p>Vous ne l'avez pas reçu ? <a href="#">Cliquez ici</a></p>
+              </div>
             </div>
             <div class="modal-footer">
               <button id="bye" type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
