@@ -126,38 +126,4 @@ $.ajax({
     });
     console.log(response)
   }
-
-  // TROISIEME GRAPHIQUE
-
-});
-var ctx = document.getElementById('myChart3').getContext('2d');
-Chart.defaults.global.defaultFontColor = '#000000';
-var myChart = new Chart(ctx, {
-  type: 'polarArea',
-  data: {
-    labels: ['Red', 'Blue'],
-    datasets: [{
-      label: '',
-      data: [15, 19],
-      backgroundColor: [
-        'rgba(0, 0, 0, 5)',
-        'rgba(240, 52, 52, 1)',
-      ],
-      borderColor: [
-        'rgba(236, 236, 236, 1)',
-        'rgba(236, 236, 236, 1)',
-      ],
-      borderWidth: 1
-    }]
-  },
-  options: {
-    scales: {
-      yAxes: [{
-        gridLines: false,
-        ticks: {
-          beginAtZero: true
-        }
-      }]
-    }
-  }
 });

@@ -1,6 +1,10 @@
 <?php
 session_start();
+
 require('inc/functions.php');
+if(!isLoggedUser()) {
+  header('Location: index.php');
+  exit(); }
 require('inc/pdo.php');
 include('inc/header.php');
 ?>
@@ -22,13 +26,6 @@ include('inc/header.php');
       <!-- DEUXIEME GRAPHIQUE -->
       <div class="graph2">
         <canvas id="myChart2" width="400" height="400"></canvas>
-      </div>
-      <!-- TROISIEME GRAPHIQUE -->
-      <div class="graph3">
-        <canvas id="myChart3" width="400" height="400"></canvas>
-      </div>
-      <div class="graph4">
-        <canvas id="lineex" width="400" height="400"></canvas>
       </div>
   </div>
 </div>
