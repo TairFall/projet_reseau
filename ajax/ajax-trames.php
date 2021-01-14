@@ -1,8 +1,7 @@
 <?php
 require('../inc/functions.php');
 require('../inc/pdo.php');
-//$trames = json_decode($_POST['trames']);
-//print_r($_POST['trames']);
+
 
 $trames = $_POST['trames'];
 $tableau_conv = [

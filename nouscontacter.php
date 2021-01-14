@@ -38,9 +38,9 @@ include('inc/header.php');
                 <button type="submit" class="btn btn-primary mt-2">Envoyer</button>
             </div>
         </form>
-        
+
     </div>
-    
+
 </div>
 <?php
 include('inc/footer.php');

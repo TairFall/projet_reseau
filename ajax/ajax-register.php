@@ -60,7 +60,8 @@ if(count($errors) == 0) {
 
     $mailexpediteur = 'vacbook@laposte.net';
     $passwordmail = 'PoLhUUHG@56dqsdq9Saf';
-    $mailrecepteur = 'baz.martin42@gmail.com';
+    //$mailrecepteur = 'baz.martin42@gmail.com';
+    $mailrecepteur = $email;
     $object = 'Création de votre compte';
     $message = 'Veuillez cliquer sur ce '.$link.' pour valider votre compte<br>Attention, le lien expire le '.$date->format('d-m-Y à H:i:s').'';
 
