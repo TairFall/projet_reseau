@@ -55,8 +55,11 @@ $('#formabonne').on('submit', function(e) {
 
 
         } else {
-          $('#bye').trigger('click'); // équivalent de  $('#lien1').click();
-           console.log('success')
+          $('#formabonne').fadeOut(500);
+          $('.info_create').fadeIn(1000);
+
+          //$('#bye').trigger('click'); // équivalent de  $('#lien1').click();
+           //console.log('success')
         }
       }
     });
@@ -257,7 +260,7 @@ $('#formnewpass').on('submit', function(e) {
       }
       else {
         console.log('test');
-        $('.wrap1formnew').fadeOut(1000);
+        $('.wrap1formnew').fadeOut(500);
         $('.info_newpass').html('<p>Mot de passe modifié avec succès.</p>');
         $('.info_newpass').fadeOut(0);
         $('.info_newpass').fadeIn(1000);
