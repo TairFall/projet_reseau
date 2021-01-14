@@ -40,7 +40,8 @@ if(!empty($email)){
 
         $mailexpediteur = 'vacbook@laposte.net';
         $passwordmail = 'PoLhUUHG@56dqsdq9Saf';
-        $mailrecepteur = 'baz.martin42@gmail.com';
+        //$mailrecepteur = 'baz.martin42@gmail.com';
+        $mailrecepteur = $email;
         $object = 'Nouveau mot de passe';
         $message = 'Veuillez cliquer sur ce '.$link.' pour changer votre mot de passe<br>Attention, le lien expire le '.$date->format('d-m-Y à H:i:s').'';
 
